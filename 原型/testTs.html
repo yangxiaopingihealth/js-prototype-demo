@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    // function Book1() {
+    //     this.name = "三国演义";
+    //     this.buy = function(){
+    //         console.log("buy");
+    //     };
+
+    //     return {
+    //         "desc": "这不是我想要的书啊"
+    //     };
+    // }
+
+    // Book1.prototype.number = 50;
+    // Book1.prototype.buy = function(){
+    //     console.log("buy");
+    // }
+
+    // var book1 = new Book1();
+    // console.log(book1);
+
+    // function Book2() {
+    //     this.name = "三国演义";
+    //     this.buy = function() {
+    //         console.log("buy");
+    //     };
+    //     return '我是一个常量或者变量';
+    // }
+
+    // Book2.prototype.number = 50;
+    // Book2.prototype.buy2 = function() {
+    //     console.log("buy2");
+    // }
+
+    // var book2 = new Book2();
+    // console.log(book2);
+
+    // function Book3() {
+    //     this.name = "三国演义";
+    //     this.buy = function(){
+    //         console.log("buy");
+    //     };
+    // }
+
+    // Book3.prototype.number = 50;
+    // Book3.prototype.buy2 = function(){
+    //     console.log("buy2");
+    // }
+
+    // var book3 = new Book3();
+    // console.log(book3);
+
+
+    // function Book4() {
+    //     this.name = "三国演义";
+    //     this.buy = function(){
+    //         console.log("buy");
+    //     };
+    // }
+
+    // Book4.prototype = {
+    // 	number: 50,
+    // 	buy2: function(){
+    // 		console.log("buy2");
+    // 	}
+    // }
+
+    // var book4 = new Book4();
+    // console.log(book4);
+
+    function Book5() {
+        this.name = "三国演义";
+        this.buy = function() {
+            console.log("buy");
+        };
+    }
+
+    Book5.prototype.number = 50;
+    Book5.prototype.buy2 = function(){
+        console.log("buy2");
+    }
+
+    var book5 = new Book5();
+    var book6 = new Book5();
+
+    Book5.prototype.number = 60;
+
+    console.log(book5);
+    console.log(book6);
+
+
+    </script>
+</body>
+
+</html>
